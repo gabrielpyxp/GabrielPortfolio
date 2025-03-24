@@ -1,0 +1,379 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    color: #aed6f1;
+}
+
+/* Corpo da página */
+body {
+    background-color: #161616;
+    height: 100vh;
+}
+
+.msg{
+    font-size: 27px;
+    font-weight: 700;
+    border-right: 4px solid #aed6f1;
+    width: 29ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: blinkMarker 0.5s infinite, typing 5s steps(29) infinite;
+
+}
+
+.msg span{
+    color: #e5f2fb;
+
+}
+@keyframes blinkMarker {
+    50%{
+        border-right-color: transparent;
+    }
+
+}
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 27ch;
+    }
+    60%{
+        width: 27ch;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+/* Estrutura principal */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.efeito-topo, .efeito-topoimg, .titulos, .msg, .efeito-box1, .efeito-box2, .efeito-box3, .efeito-box4, .efeito-box5{
+    visibility: hidden;
+}
+
+
+
+/* Cabeçalho */
+header {
+    padding: 20px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex {
+    display: flex ;
+    gap: 29px; /* Aumente o espaço entre elementos */
+    justify-content: center;  
+}
+/* Links do cabeçalho */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #ffffff;
+    transform: scale(1.10);
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Botão de contato no cabeçalho */
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #aed6f1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #161616;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #ffffff;
+}
+
+/* Títulos */
+h2.titulos {
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    padding: 16px 5%;
+}
+
+/* Seção topo do site */
+section.topo-site {
+    padding: 40px 4%;
+    margin-top: 120px;
+}
+
+.topo-site h1 {
+    color: #ffffff;
+    font-size: 42px;
+}
+
+.topo-site h1 span {
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.topo-site p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+
+
+.topo-site .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.topo-site .btn-contato2  button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.topo-site .btn-contato2 button {
+    background-color: #ff9501;
+    color: #000000;
+}
+
+.topo-site .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #ff0000;
+}
+
+.topo-site .btn-contato2 button:hover {
+    box-shadow: 0px 0px 8px #ffffff;
+}
+
+/* Ajuste da imagem no topo do site */
+
+
+
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.topo-site .img-topo img {
+    width: 660px;
+    margin-top: -270px;
+    float: right;
+    margin-left: 20px; /* Adiciona um espaçamento à esquerda da imagem */
+    margin-bottom: 20px; 
+    order: 2;
+    animation: flutuar 2s ease-in-out infinite alternate;
+   
+
+}
+
+/* Seção especialidade */
+section.especialidade {
+    padding: 180px 4%;
+}
+
+section.especialidade .flex {
+    gap: 50px;
+}
+
+
+div.box {
+    background-color: #313131;
+    padding: 5px 4%;
+    border-radius: 20px;
+    border: 2px solid #313131;
+    margin-top: 30px;
+}
+
+div.box:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 8px #abb1ad;
+}
+
+div.box p {
+    font-size: 26px;
+    text-align: center;
+    margin: 15px 0;
+}
+.icone{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    
+    
+}
+/* Contato */
+.box p, .box1 p h1{
+    font-size: 1px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.box1{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+section.contato h1 {
+    font-size: 10px;
+    text-align: center;
+    
+}
+
+section.contato p {
+    font-size: 12px;
+}
+
+
+.box1 {
+    display:inline-block;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    /*margin-top: 1100px;*/
+    margin: 12px ;
+    
+}
+
+.box1 p{
+    font-weight: bold;
+    color: #cec7c7;
+    
+}
+
+/* Estilo dos ícones de contato */
+.email, img.contato, img.telefone, img.github, img.linkedn {
+   
+    background-color: #161616;
+    border-radius: 1000px;
+    border: 5px solid #161616;
+    margin: 10px;
+   color: #313131;
+   
+    
+}
+
+div.box1:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 20px 4% 100px #abb1ad;
+    
+}
+
+.click-git {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    display: block; /* Faz o link ocupar todo o espaço da div */
+}
+
+.click-link {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    display: block; /* Faz o link ocupar todo o espaço da div */
+}
+.click-email {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    display: block; /* Faz o link ocupar todo o espaço da div */
+}
+.click-contato {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    display: block; /* Faz o link ocupar todo o espaço da div */
+}
+.click-zap {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    display: block; /* Faz o link ocupar todo o espaço da div */
+}
+
+/*RESPONSIVIDADE MOBILE*/
+@media screen and (max-width: 1020px) {
+
+    .flex{
+        flex-direction:column-reverse; 
+       
+    }
+    .img, txt-box{
+        display: center;
+        position: relative;
+        height: 10vh; /
+        top:: 50%;
+        left: 50%;
+        margin-top: 50px;
+        transform: translate(-50%, -50%);
+    
+    }
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .menu-desktop, .btn-contato{
+        display: none;
+
+    }
+    .section.interface{
+        padding: 10px 8%;
+    }
+
+    .msg{
+        font-size: 1.5rem;
+        font-weight: 700;
+        border-right: 2px solid #aed6f1;
+        width: 29ch;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: blinkMarker 0.5s infinite, typing 5s steps(29) infinite;
+    
+    }
+    .icone{
+        padding: 12px 3%;
+        line-height: 30px;
+        flex-direction: column;
+    }
+    .topo-site h1{
+        font-size: 32px;
+    }
+    .topo-site .img-topo{
+        width: 850px;
+        margin-left: -225px;
+    }
+}
+
+
+
