@@ -78,27 +78,27 @@ revelar.reveal('.efeito1',
     {
         duration:1500,
         distance:'50px'
-        ,delay: 200 
+        ,delay: 300 
 
 })
 revelar.reveal('.efeito2',
     {
         duration:1500,
         distance:'50px'
-        ,delay: 500 
+        ,delay: 400 
 
 })
 revelar.reveal('.efeito3',
     {
         duration:1500,
         distance:'50px'
-        ,delay: 700 
+        ,delay: 500 
 
 })
 revelar.reveal('.efeito4',
     {
         duration:1500,
         distance:'50px'
-        ,delay: 900 
+        ,delay: 600 
 
 })
