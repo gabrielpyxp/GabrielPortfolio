@@ -333,7 +333,7 @@ div.box1:hover {
         display: center;
         position: relative;
         height: 10vh; /
-        top:: 50%;
+        top: 50%;
         left: 50%;
         margin-top: 50px;
         transform: translate(-50%, -50%);
